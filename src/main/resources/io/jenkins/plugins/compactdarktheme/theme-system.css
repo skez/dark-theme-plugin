@@ -1,0 +1,2 @@
+@import url('theme.css') screen and (prefers-color-scheme: dark);
+@import url('theme-compact.css') screen and (prefers-color-scheme: light);

@@ -8,8 +8,8 @@
     <relativePath />
   </parent>
   <groupId>io.jenkins.plugins</groupId>
-  <artifactId>dark-theme</artifactId>
-  <version>0.0.9-SNAPSHOT</version>
+  <artifactId>compact-dark-theme</artifactId>
+  <version>0.1-SNAPSHOT</version>
   <packaging>hpi</packaging>
   <properties>
     <revision>0.0.3</revision>
@@ -67,9 +67,9 @@
   </developers>
 
   <scm>
-    <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
-    <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
+    <connection>scm:git:git://github.com/skez/${project.artifactId}-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:skez/${project.artifactId}-plugin.git</developerConnection>
+    <url>https://github.com/skez/${project.artifactId}-plugin</url>
     <tag>${scmTag}</tag>
   </scm>
 

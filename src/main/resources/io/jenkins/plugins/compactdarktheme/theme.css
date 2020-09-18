@@ -1,3 +1,5 @@
+@import url('theme-compact.css') screen;
+
 :root {
   --dark-theme-bg-black: #111;
   --dark-theme-bg-dark: #222;
@@ -55,7 +57,7 @@
   --breadcrumbs-border: var(--dark-theme-bg-333);
 
   /* Links */
-  --link-color: #18B;
+  --link-color: #ddb;
   --link-visited-color: var(--link-color);
 
   /* Table */

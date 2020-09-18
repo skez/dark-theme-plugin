@@ -1,4 +1,4 @@
-package io.jenkins.plugins.darktheme;
+package io.jenkins.plugins.compactdarktheme;
 
 import edu.umd.cs.findbugs.annotations.NonNull;
 import hudson.Extension;
@@ -8,12 +8,13 @@ import io.jenkins.plugins.thememanager.ThemeManagerFactoryDescriptor;
 import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundConstructor;
 
-public class DarkThemeSystemManagerFactory extends ThemeManagerFactory {
+public class CompactDarkThemeManagerFactory extends ThemeManagerFactory {
 
-    public static final String THEME_SYSTEM_CSS = "theme-system.css";
+    public static final String THEME_CSS = "theme.css";
+    public static final String THEME_URL_NAME = "theme-compact-dark";
 
     @DataBoundConstructor
-    public DarkThemeSystemManagerFactory() {
+    public CompactDarkThemeManagerFactory() {
     }
 
     @Override
@@ -24,29 +25,24 @@ public class DarkThemeSystemManagerFactory extends ThemeManagerFactory {
     }
     
     @Extension
-    @Symbol("darkSystem")
-    public static class DarkThemeSystemManagerFactoryDescriptor extends ThemeManagerFactoryDescriptor {
-        
+    @Symbol("compactDark")
+    public static class CompactDarkThemeManagerFactoryDescriptor extends ThemeManagerFactoryDescriptor {
+
         @NonNull
         @Override
         public String getDisplayName() {
-            return "Dark (Respect OS/Browser system setting)";
+            return "Compact Dark";
         }
 
         @Override
-        public String getThemeCssSuffix() {
-            return "theme-system.css";
-        }
-        
-        @Override
         public ThemeManagerFactory getInstance() {
-            return new DarkThemeSystemManagerFactory();
+            return new CompactDarkThemeManagerFactory();
         }
 
         @NonNull
         @Override
         public String getThemeId() {
-            return "dark";
+            return "compactDark";
         }
     }
 }

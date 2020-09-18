@@ -1,4 +1,4 @@
-package io.jenkins.plugins.darktheme;
+package io.jenkins.plugins.compactdarktheme;
 
 import hudson.Extension;
 import hudson.model.UnprotectedRootAction;
@@ -13,14 +13,14 @@ import org.kohsuke.stapler.StaplerRequest;
 import org.kohsuke.stapler.StaplerResponse;
 import org.kohsuke.stapler.WebMethod;
 
-import static io.jenkins.plugins.darktheme.DarkThemeManagerFactory.THEME_CSS;
-import static io.jenkins.plugins.darktheme.DarkThemeManagerFactory.THEME_URL_NAME;
-import static io.jenkins.plugins.darktheme.DarkThemeSystemManagerFactory.THEME_SYSTEM_CSS;
+import static io.jenkins.plugins.compactdarktheme.CompactDarkThemeManagerFactory.THEME_CSS;
+import static io.jenkins.plugins.compactdarktheme.CompactDarkThemeManagerFactory.THEME_URL_NAME;
+import static io.jenkins.plugins.compactdarktheme.CompactDarkThemeSystemManagerFactory.THEME_SYSTEM_CSS;
 import static java.util.Objects.requireNonNull;
 
 @Extension
 @Restricted(NoExternalUse.class)
-public class DarkThemeRootAction implements UnprotectedRootAction {
+public class CompactDarkThemeRootAction implements UnprotectedRootAction {
 
     @Override
     public String getIconFileName() {
@@ -38,7 +38,7 @@ public class DarkThemeRootAction implements UnprotectedRootAction {
     }
 
     @WebMethod(name = THEME_CSS)
-    public void doDarkThemeCss(StaplerRequest req, StaplerResponse res) throws IOException {
+    public void doCompactDarkThemeCss(StaplerRequest req, StaplerResponse res) throws IOException {
         try (InputStream themeInputStream = getClass().getResourceAsStream(THEME_CSS)) {
             res.setContentType("text/css");
             requireNonNull(themeInputStream);
@@ -48,7 +48,7 @@ public class DarkThemeRootAction implements UnprotectedRootAction {
     }
 
     @WebMethod(name = THEME_SYSTEM_CSS)
-    public void doDarkThemeSystemCss(StaplerRequest req, StaplerResponse res) throws IOException {
+    public void doCompactDarkThemeSystemCss(StaplerRequest req, StaplerResponse res) throws IOException {
         try (InputStream themeInputStream = getClass().getResourceAsStream(THEME_SYSTEM_CSS)) {
             res.setContentType("text/css");
             Objects.requireNonNull(themeInputStream);

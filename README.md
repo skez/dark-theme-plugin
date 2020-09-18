@@ -6,7 +6,7 @@
 [![Jenkins Plugin](https://img.shields.io/jenkins/plugin/v/dark-theme.svg)](https://plugins.jenkins.io/dark-theme)
 [![Jenkins Plugin Installs](https://img.shields.io/jenkins/plugin/i/dark-theme.svg?color=blue)](https://plugins.jenkins.io/dark-theme)
 
-This repository contains a dark theme for Jenkins.
+This repository contains a compact dark theme for Jenkins.
 
 *Requires Jenkins >= 2.249.1*
 

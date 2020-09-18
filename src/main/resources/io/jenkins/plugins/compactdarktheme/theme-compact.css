@@ -1,0 +1,22 @@
+/* Start Compact additions */
+ .task-link-wrapper {
+  padding: 0
+ }
+
+ .task-link {
+   padding: 0rem 0.5rem
+ }
+
+ .page-header {
+   height: 2.6rem
+ }
+
+ .pane td {
+   padding: 0
+ }
+
+ .side-panel, .pane-header {
+   padding: 0
+ }
+
+/* End Compact additions */

@@ -2,4 +2,4 @@
 unclassified:
   themeManager:
     disableUserThemes: true
-    theme: "darkSystem"
+    theme: "compactDark"
