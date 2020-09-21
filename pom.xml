@@ -19,7 +19,7 @@
     <tagNameFormat>@{project.version}</tagNameFormat>
     <useBeta>true</useBeta>
   </properties>
-  <name>Dark Theme</name>
+  <name>Compact Dark Theme</name>
   <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
   <dependencyManagement>
     <dependencies>
