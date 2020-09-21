@@ -46,7 +46,7 @@ public class CompactDarkThemeSystemManagerFactory extends ThemeManagerFactory {
         @NonNull
         @Override
         public String getThemeId() {
-            return "compactDarkSystem";
+            return "compactDark";
         }
     }
 }

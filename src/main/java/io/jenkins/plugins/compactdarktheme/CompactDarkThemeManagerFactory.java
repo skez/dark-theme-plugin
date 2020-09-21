@@ -11,7 +11,7 @@ import org.kohsuke.stapler.DataBoundConstructor;
 public class CompactDarkThemeManagerFactory extends ThemeManagerFactory {
 
     public static final String THEME_CSS = "theme.css";
-    public static final String THEME_URL_NAME = "theme-compact-dark";
+    public static final String THEME_URL_NAME = "theme-compactDark";
 
     @DataBoundConstructor
     public CompactDarkThemeManagerFactory() {
